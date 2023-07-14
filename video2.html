@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f1f1f1;
+        }
+
+        #player-container {
+            position: relative;
+            width: 640px;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        .plyr__controls {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .plyr__control {
+            color: #fff;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="player-container">
+        <video id="myVideo" controls>
+            <source src="hola.mp4" type="video/mp4">
+            <track src="/asscents/hola.vtt" kind="subtitles" srclang="en" label="English" default>
+            <track src="/asscents/hola.vtt" kind="subtitles" srclang="en" label="Español" default>
+        </video>
+    </div>
+
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="/video2.js"></script>
+</body>
+
+</html>
